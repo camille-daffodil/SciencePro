@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shouye</title>
+	<link rel="stylesheet" href="../css/shouye.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+
+	<style>
+		 .swiper-container {
+	      width: 100%;
+	      height: 400px;
+	    }
+	    .swiper-slide {
+	      text-align: center;
+	      font-size: 18px;
+	      background: pink;
+
+	      /* Center slide text vertically */
+	      display: -webkit-box;
+	      display: -ms-flexbox;
+	      display: -webkit-flex;
+	      display: flex;
+	      -webkit-box-pack: center;
+	      -ms-flex-pack: center;
+	      -webkit-justify-content: center;
+	      justify-content: center;
+	      -webkit-box-align: center;
+	      -ms-flex-align: center;
+	      -webkit-align-items: center;
+	      align-items: center;
+	    }
+	    .swiper-slide img {
+	    	height: 400px;
+	    }
+	   .swiper-container-horizontal>.swiper-pagination-bullets {
+	    	padding: 0 10px;
+	    	display: inline-block;
+	    	width: auto;
+	    	position: relative;
+	    	left:50%;
+	    	top:-30px;
+			border-radius: 11px;
+		    background-color: rgba(0, 0, 0, 0.4);
+	    }
+	   /* .swiper-container-horizontal>.swiper-pagination-bullets {
+	    	display: inline-block;
+	    	width: auto;
+	    }*/
+	    .swiper-pagination .swiper-pagination-bullet {
+	    	width: 12px;
+	    	height: 12px;
+    	    background: #FFFFFF;
+			opacity: 0.6;
+	    }
+	    .swiper-pagination .swiper-pagination-bullet-active{
+	    	/*background-color: red;*/
+	    	width: 32px;
+	    	border-radius: 12px;
+	    }
+
+	</style>
+	<!-- <script src="../js/shouye.js"></script> -->
+</head>
+<body>
+<!-- header ==========================================-->
+	<div class="sy-header">
+		<div class="sy-wrap">
+			<div class="sy-nav">
+				<div class="sy-left"><img src="../img/nav_logo.png" alt="logo"></div>
+				<div class="sy-right">
+					<ul>
+						<li class="active"><a href="#" ></a>首页</li>
+						<li class="l-down">
+							<a  href="#">关于联盟</a><span class="down"></span>	
+							<ul class="sy-r-sub blueline">
+								<li class=""><a href="#">联盟章程</a></li>
+								<li><a href="">介绍联盟</a></li>
+								<li><a href="">联盟规范</a></li>
+								<li><a href="">指导价格</a></li>
+								<li><a href="">会员名单</a></li>
+							</ul>
+						</li>
+						<li class="l-down">
+							<a href="#">联盟动态</a>
+							<span class="down"></span>
+							<ul class="sy-r-sub blueline">
+								<li class=""><a href="">新闻资讯</a></li>
+								<li><a href="">最新活动</a></li>
+							</ul>
+						</li>
+						<li><a href="#"></a>科技政策</li>
+						<li class="l-down">
+							<a  href="#">联系我们</a><span class="down"></span>
+							<ul class="sy-r-sub blueline">
+								<li class=""><a href="">联系我们</a></li>
+								<li><a href="">加入我们</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- banner============================================= -->
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="https://www.baidu.com" onclick="return false" target="_blank"><img src="../img/banner.png" alt=""></a></div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- 最新活动 ===================================================-->
+  <div class="newactivity sy-wrap">
+  	<div class="top">
+  		<div class="left">
+  			最新活动
+  			<span class="new">NEW</span>
+  		</div>
+  		<div class="right clear">
+  			查看更多
+  			<span class="gt">&gt</span>
+  		</div>
+  	</div>
+  	<div class="bottom clear">
+  		<div class="b-left clear">
+  			<img src="../img/actPic.png" alt="">
+  		</div>
+  		<div class="b-right clear">
+  			<div class="title"><a href="#">抽奖活动正在进行</a></div>
+  			<div class="tag">活动标签</div>
+  			<div class="goalwrap clear">
+  				<div class="goal">活动目的：</div>
+  				<div class="goalcontent">mudi一而三死吴刘起吧酒十一而三死吴刘起吧酒十一而三死吴刘起吧酒十一而三死吴刘起吧酒十一而三死吴刘起吧酒十一而三死吴刘起吧酒十一而三死吴刘起吧酒十一而三死吴刘起吧酒十一而三死吴刘起吧酒十123456...</div>
+  			</div>
+  			<div class="timewrap clear">
+  				<div class="time">活动时间：</div>
+  				<div class="timecontent">2017年9月15日(星期五)14:30—17:00</div>
+  			</div>
+  			<div class="placewrap clear">
+  				<div class="place">活动地点：</div>
+  				<div class="placecontent">2广州·知商谷(广州市黄埔区萝岗科学城科学大道231号A9栋一楼日内瓦会议厅)</div>
+  			</div>
+  			<div class="participate-activities"><a href="">参加活动</a></div>
+  		</div>
+  	</div>
+  </div>
+  
+  <!-- 新闻资讯 ====================================================-->
+  <div class="news-consultation sy-wrap clear">
+	  	<div class="tabs">
+	  		<ul>
+	  			<li class="active"><span>科技政策</span></li>
+	  			<li><span>创新科学</span></li>
+	  			<li><span>知识资讯</span></li>
+	  			<li><span>评审公示</span></li>
+	  		</ul>
+	  		<div class="getMore"><a href="#">查看更多&gt;</a></div>		
+	  	</div>
+	  	<div class="tabcontent clear mrt-22">
+	  		<div class="tab1 ">
+	  			<div class="left f-l">
+	  				<a href="#">
+	  					<img src="../img/news_small_pic1.png" alt="">
+	  					<div class="describe">
+	  						<div class="de_title">
+	                            关于开展2016-2017 年科技创新企业发展专创新企业发展专项科技型中小企业创新专题创客项目验项目验
+	                        </div>
+	                        <div class="de_date">2017-10-07</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right r-one f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  		</div>
+	  		<div class="tab2 ">
+	  			<div class="left f-l">
+	  				<a href="#">
+	  					<img src="../img/news_small_pic1.png" alt="">
+	  					<div class="describe">
+	  						<div class="de_title">
+	                            关于开展2016-2017 年科技创新企业发展专创新企业发展专项科技型中小企业创新专题创客项目验项目验
+	                        </div>
+	                        <div class="de_date">2017-10-07</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  		</div>
+	  		<div class="tab3 ">
+	  			<div class="left f-l">
+	  				<a href="#">
+	  					<img src="../img/news_small_pic1.png" alt="">
+	  					<div class="describe">
+	  						<div class="de_title">
+	                            关于开展2016-2017 年科技创新企业发展专创新企业发展专项科技型中小企业创新专题创客项目验项目验
+	                        </div>
+	                        <div class="de_date">2017-10-07</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  		</div>
+	  		<div class="tab4 ">
+	  			<div class="left f-l">
+	  				<a href="#">
+	  					<img src="../img/news_small_pic1.png" alt="">
+	  					<div class="describe">
+	  						<div class="de_title">
+	                            关于开展2016-2017 年科技创新企业发展专创新企业发展专项科技型中小企业创新专题创客项目验项目验
+	                        </div>
+	                        <div class="de_date">2017-10-07</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  			<div class="right f-r">
+	  				<a href="#">
+	  					<div class="shortNews f-l">
+	  						<img src="../img/news_small_pic1.png" alt="">
+	  					</div>
+	  					<div class="aboutNews f-r">
+	  						<div class="aboutNewsTitle">
+	  							关于开展2016-2017年科技创新企业发展专项科技型中小企业...
+	  						</div>
+	  						<div class="aboutNewsDate">2017-10-17</div>
+	  					</div>
+	  				</a>
+	  			</div>
+	  		</div>
+	  	</div>
+  </div>
+  <!-- member ======================================================-->
+  <div class="member sy-wrap">
+	  	<div class="m_top">
+	  		<span class="m_t_left">
+	  			联盟会员
+	  		</span>
+	  		<span class="m_t_right">
+	  			<a href="">查看更多&gt</a>
+	  		</span>
+	  	</div>
+	  	<div class="m_middle">
+	  		<div class="multipleColumn" style="margin:0 auto">
+				<div class="bd">
+					<div class="ulWrap">
+							<ul><!-- 把每次滚动的n个li放到1个ul里面 -->
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+							</ul>
+							<ul><!-- 把每次滚动的n个li放到1个ul里面 -->
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+							</ul>	
+					</div>
+					<div class="ulWrap">
+							<ul><!-- 把每次滚动的n个li放到1个ul里面 -->
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+							</ul>
+							<ul><!-- 把每次滚动的n个li放到1个ul里面 -->
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank"><img src="../img/listCard1.png" /></a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+								<li>
+									<div class="pic"><a href="" target="_blank">这是第6张的"</a></div>
+									<div class="title"><a href="" target="_blank"></a></div>
+								</li>
+							</ul>	
+					</div><!-- ulWrap End -->
+					<a class="prev" href="javascript:;"></a>
+	            	<a class="next" href="javascript:;"></a>
+				</div><!-- bd End -->
+
+			</div><!-- multipleColumn End -->
+	  	</div>
+	  	<div class="m_bottom">
+	  		<a href="">加入我们</a>
+	  	</div>
+  </div
+<!-- footer ========================================================-->
+<div class="footer">
+	<div class="sy-wrap">
+		<div class="f-top">
+			<p class="contact-us ">联系我们</p>
+			<div class="c-wrap clear"><span class="c-left"></span><span class="c-right"></span></div>
+		</div>
+		<div class="f-middle clear">
+			<div class="f-t-left">
+				<div>秘书处地址：广州市黄埔区萝岗科学城科学大道231-233号A9-A10栋1-4楼</div>
+				<div>联盟业务部：黄先生 15989181739</div>
+				<div>联盟会员部：许先生 13682243179</div>
+				
+			</div>
+			<div class="f-t-right clear">
+				<img src="../img/erweima_bottom.png" alt="">
+			</div>
+
+		</div>
+		<div class="friend-a clear">
+			<ul>
+				<li>友情链接：</li>
+				<li>汇桔网<span>|</span></li>
+				<li>汇桔网<span>|</span></li>
+				<li>汇桔网<span>|</span></li>
+				<li>汇桔网<span>|</span></li>
+				<li>汇桔网<span>|</span></li>
+				<li>汇桔网</li>	
+			</ul>
+		</div>
+		
+	</div>
+	
+</div>
+<div class="f-bottom">
+	Copyright @ 2017 WTOIP.COM 汇桔（广州博鳌纵横网络科技有限公司）版权所有
+</div>
+
+  	<script src="../js/jquery.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.superslides.js"></script>
+	
+	<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="../js/shouye.js"></script>
+	<script>
+
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable :true,
+      },
+      autoplay:{
+      	delay: 1000,
+      },
+      preventClicks : false,
+    });
+    $('.swiper-slide').mouseenter(function () {
+    	
+	   swiper.autoplay.stop();
+	})
+	$('.swiper-slide').mouseleave(function () {
+	   swiper.autoplay.start();
+	})
+	$('.bd').hover(function(){
+		$(this).find('.prev,.next')
+        .stop(true, true)
+        .fadeTo('show', 1);
+	},function(){
+		$(this).find(".prev,.next")
+		.fadeOut();
+	});
+	jQuery(".multipleColumn").slide({titCell:".hd ul",mainCell:".bd .ulWrap",autoPage:true,effect:"leftLoop",autoPlay:true,vis:4});
+  </script>
+</body>
+</html>
